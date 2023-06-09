@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalmar Autokereskedes</title>
+    <link rel="stylesheet" href="Kalmar Autokereskedes.css">
+</head>
+<body>
+
+    <!-- dashboard | login(img,name)
+    slider/carousel 3 pics
+    menu aside, 4 link legalabb | osszes termek
+    footer      |       |        -->
+    <div class="hatterkep"></div>
+
+    <div class="foDoboz">
+
+        <div class="idoEsLogin">
+        <div class="idoContainer">
+            <h2 id="ido"></h2>
+        </div>
+
+    <div class="login">
+        <div class="l1"><img src="" alt=""></div>
+    <div class="l2"><h3>Bejelentkezes</h3></div>
+    <div class="l3"><label for="loginName">Felhasznalonev: </label></div>
+    <div> <input type="text" id="loginName"> <br></div>
+    <div><label for="loginPassword">Jelszo: </label></div>
+    <div><input type="password" id="loginPassword"></div>
+    <div><button onclick="bejelentkezes()">Bejelentkezes</button></div>
+    </div>
+    </div>  
+
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="https://img.freepik.com/free-photo/red-mini-coupe-driving-highway_114579-4059.jpg?size=626&ext=jpg&ga=GA1.2.179447484.1685780989&semt=ais" alt="">
+            <img src="https://img.freepik.com/free-photo/silver-color-mini-coupe-road-drive-sunlight_114579-5050.jpg?size=626&ext=jpg&ga=GA1.2.179447484.1685780989&semt=ais" alt="">
+            <img src="https://img.freepik.com/premium-photo/happy-friends-are-traveling-by-yellow-cabriolet_474601-9088.jpg?size=626&ext=jpg&ga=GA1.2.179447484.1685780989&semt=ais" alt="">
+        </div>
+    </div>
+
+
+    <div class="menuProducts">
+    <aside class="aside" style="width:25%">
+        <h2>Regisztralj MOST:</h2>
+        <button class="gomb1" onclick="form1()">Elakarom adni az automat</button>
+        <h2>Partnerunk:</h2>
+        <a href="https://joautok.hu/hasznaltauto?gclid=CjwKCAjwyeujBhA5EiwA5WD7_ePEgKrGEFiQ-G7buKCyY4NCSsYU1OPT0Xqt7m_6Q8jiYq_2euaKoxoCYLoQAvD_BwE">Link</a>
+        <h2>Eddigi Szolgaltatoink: </h2>
+        <a href="">Klikk</a>
+        <h2>Termekeink Listaja: </h2>
+        <a href="">Ide kattints</a>
+        <h2>Rolunk: </h2>
+        <a href="">Ismerj meg minket!</a>
+    </aside>
+
+    <div class="osszesTermek">
+        <div class="termek0 termekek mintaTermekek">
+            <img id="mintaKep0" class="kepek" height="300px" src="https://img.freepik.com/free-photo/white-sport-car-standing-bridge_114579-4077.jpg?w=360&t=st=1685786502~exp=1685787102~hmac=7fa2b8d49d8be2480788905249ab096aefe0e4fd2f9e23a4c0578753c9e8bdf1" alt="">
+            <p>Audi A6</p>
+            <button onclick="mintaReszletek()">Mutasd a reszleteket</button>
+         </div>
+         <div class="termekek mintaTermekek">
+            <img class="kepek" src="https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?w=740&t=st=1685981678~exp=1685982278~hmac=215667a2bc98e60206f3d4c7c909559d2402294afb03e4e1314dacbb4bf2b486" alt="">
+            <p>BMW X3</p>
+         </div>
+         <div class="termekek mintaTermekek"><img class="kepek" src="https://file.joautok.hu/car-for-sale-images/1600x1200/auto/20220705-094229-resized_6a809b31.jpg?v=1" alt=""><p>Ford Fiesta Van 1.5 TDCi Trend</p></div>
+         <div class="termekek mintaTermekek"><img class="kepek" src="https://file.joautok.hu/car-for-sale-images/1600x1200/auto/img-2697_daa33f0c.jpg?v=1" alt=""><p>Citroen C3 1.0 PureTech Vitamin</p></div>
+         <div class="termekek mintaTermekek"><img class="kepek" src="https://file.joautok.hu/car-for-sale-images/1600x1200/auto/dacialoganiimcv09tcearcticmoiegygazdasserulesmentesfrissszerviz1813793838941xljpg_2o80ug1s.jpeg?v=1" alt=""><p>Dacia Logan II MCV 0.9 TCe Arctic</p></div>
+         <div class="termekek mintaTermekek"><img class="kepek" src="https://media.istockphoto.com/id/1319951519/hu/fot%C3%B3/opel-combo-e.jpg?s=612x612&w=0&k=20&c=xMlFb7MgWYSFqEjQU3rcVYgoKo0fVE1reMUFWykFFrI=" alt=""><p>Opel Combo 1.6 CDTi 2.2t.</p></div>
+         <div class="termekek mintaTermekek"><img class="kepek" src="https://media.istockphoto.com/id/820862046/hu/fot%C3%B3/hyundai-grand-i10.jpg?s=612x612&w=0&k=20&c=ZqSuaNcSxDEP-6rQcdGqVjE4GvDRf8xeoWMKaOISvTE=" alt=""><p>Hyundai i10 1.0i Comfort</p></div>
+         <div class="termekek mintaTermekek"><img class="kepek" src="https://file.joautok.hu/car-for-sale-images/1200x900/auto/img-5440_ef922c99.jpg?v=1" alt=""><p>Skoda Rapid 1.2 TSI Ambition</p></div>
+    </div>
+
+
+</div>
+</div>
+
+    <div class="popupForm">
+    <div class="szemelyesAdatok">
+        <h2>Szemelyes adatok</h2>
+    <form action="" class="form">
+        <label for="nev">Nev:</label>
+        <input type="text" name="nev" id="nev"> <br>
+        <label for="tel">Telefonszam:</label>
+        <input type="number" name="tel" id="tel"> <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email"> <br>
+        <label for="kor">Kor:</label>
+        <input type="text" id="kor"> <br>
+        <label for="munkaterulet">Munkaterulet:</label>
+        <input type="text" id="munkaterulet"> <br>
+        <label for="hely">Hely:</label>
+        <input type="text" id="hely"> <br>
+        <label for="kepFeltoltes">Toltson fel legalabb 1 db kepet az eladni kivant autorol!</label>
+        <input type="file" id="kepFeltoltes" accept="image/*" multiple> 
+        <br>
+        <label for="szallitas">Szallitas van-e?</label>
+        <input type="checkbox" id="szallitas"><br>
+        <label for="hova">Ha igen, akkor hova?</label>
+        <input type="text" id="hova"><br>
+        <label for="nyitvatartas">Nyitvatartasi Ido:</label> 
+        <input type="text" id="nyitvatartas"> <br>
+       <input class="regButton" type="button" onclick="termReg()" value="Kattints a termek es a profil regisztralasahoz">
+       <input class="regButton" type="button" onclick="visszaAFooldalra()" value="Vissza">
+    </div>
+    </form>
+    
+    <div class="termekAdatokForm">
+        <h2>Gepjarmu Adatok: </h2>
+    <form class="form" action="">
+        <label for="Gepjarmu megnevezese">Gepjarmu megnevezese: </label>
+        <input onchange="toUpperCaseInput(this)" class="termAdat" type="text" id="Gepjarmu megnevezese"> <br>
+        <label for="allapot">Gepjarmu allapota: </label>
+        <select class="termAdat" name="allapot" id="Gepjarmu allapota">
+            <option value="vadonatuj">Vadonatuj</option>
+            <option value="joAllapot">Jo allapotu</option>
+            <option value="kozepesAllapot">Kozepes allapotu</option>
+            <option value="javitando">Javitasra Szorul</option>
+        </select> <br>
+        <label for="gepjarmuSzine">Szine: </label>
+        <input class="termAdat" type="color" id="Szine"> <br>
+        <label for="evjarat">Evjarat: </label>
+        <input class="termAdat" type="text" id="Evjarat"> <br>
+        <label for="alvazszam">Alvazszam: </label>
+        <input class="termAdat" type="number" id="Alvazszam"> <br>
+        <label for="kmOra">Km ora allasa: </label>
+        <input class="termAdat" type="text" id="Km ora allasa"> <br>
+        <label for="gumiAllapota">Gumik allapota: </label>
+        <input class="termAdat" type="text" id="Gumik allapota"> <br>
+        <label for="rendszam">Rendszam: </label>
+        <input class="termAdat" type="text" id="Rendszam"> <br>
+        <label for="muszakiErv">Muszaki Ervenyessege: </label>
+        <input class="termAdat" type="text" id="Muszaki Ervenyessege"> <br>
+        <label for="uzemanyagTipus">Uzemanyag tipus: </label>
+        <select class="termAdat" name="uzemanyagTipus" id="Uzemanyag tipus">
+            <option value="benzin">Benzin</option>
+            <option value="dizel">Dizel</option>
+        </select> <br>
+        <label for="teljesitmeny">Teljesitmeny: </label>
+        <input class="termAdat" type="text" id="Teljesitmeny"> <br>
+        <label for="hengerurtartalom">Hengerurtartalom: </label>
+        <input class="termAdat" type="text" id="Hengerurtartalom"> <br>
+        <label for="sebessegfokozatok">Sebessegfokozatok Szama: </label>
+        <input class="termAdat" type="number" id="Sebessegfokozatok Szama"> <br>
+
+    </form>
+        </div>
+    </div>
+    
+    <div class="beirtAdatok"></div>
+
+    <div class="mintaTermekekLeiras">
+        <section class="mintaTermekLeirasBelsoDoboz1" id="mintaTermekLeirasBelsoDoboz1">
+            <h2 class="markaEsTipus"></h2>
+        </section>
+        <section class="mintaTermekLeirasBelsoDoboz2" id="mintaTermekLeirasBelsoDoboz2">
+            <p class="mintaTulajdonsagok"></p>
+            <p class="mintaErtekek"></p>
+         </section>
+        <section class="mintaTermekLeirasBelsoDoboz3">
+            <h2 class="markaEsTipus"></h2>
+            <p class="mintaTulajdonsagok"></p>
+            <p class="mintaErtekek"></p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div><h2>Elerhetosegunk: </h2>
+        <h3>Telefonszam: </h3>
+        <p>06-20-478-0878</p>
+        <h3>E-mail: </h3>
+        <p>kalmarautoker@indamail.com</p></div>
+        <div><h2>Telephelyunk: </h2>
+        <p>8567 Kisvarda, Auto utca 86.</p></div>
+        <div><h2>Nyitvatartasi idonk: </h2>
+        <p>Hetfo: 08-16:00 <br>
+        Kedd: 08-16:00 <br>
+        Szerda: 08-18:00 <br>
+        Csutortok: 08-16:00 <br>
+        Pentek: 08-18:00 <br>
+        Szombat: 08-12:00 <br>
+        Vasarnap: Zarva <br></p></div>
+    </footer>
+    <div class="proba"></div>
+
+    <div id="proba"></div>
+
+    <script src="Kalmar Autokereskedes.js"></script>   
+</body>
+</html>
