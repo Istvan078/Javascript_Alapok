@@ -263,7 +263,7 @@ for(i=150; i>=100; i--){
 }
 console.log(x);
 */
-
+/*
 
 var y;
 var i = 0;
@@ -334,4 +334,26 @@ for(i=0;i<100;i++){
   }else{console.log(t + " :Nem osztható 3-al");
 t++;
 }
+}   */
+
+
+
+function send(){
+  var name0 = document.getElementById("name").value;
+  var array0 = [];
+  var object0 = {name: name0, age:10};
+  array0.push(object0);
+  console.log(array0)
+  document.getElementById("dom").innerHTML = object0.name
+ //  console.log(array0[0])
+ count0();
+ createElement(div);
+}
+
+function count0(){
+      document.getElementById("od").innerHTML = "Nem!"
+}
+
+function createElement(div){
+
 }

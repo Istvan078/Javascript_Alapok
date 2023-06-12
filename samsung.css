@@ -1,0 +1,164 @@
+body{
+    background-color: #000;
+    background-image: url(https://cdn.rios.hu/dl/cnt/2023-01/181425/samsung_galaxy_s23_szeria1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header{
+    text-align: center;
+    width: auto;
+    position: sticky;
+    top: 0;
+}
+.headerButton{
+    text-align: center;
+    border: 7px solid rgb(9, 81, 30, 0.7);
+    background-color: rgb(210, 27, 27, 0.7);
+    border-radius: 4px;
+    border-bottom: none;
+    border-top-width: 10px;
+    font-size: 50px;
+}
+
+.nevTipus{
+    font-size: 45px;
+    background-image: linear-gradient(to right,yellow, green, blue);
+    -webkit-background-clip: text;  /* azt állítja be, hogy a hatás csak a szövegre vonatkozzon */
+    -webkit-text-fill-color: transparent; /* átállítja átlátszóra a szöveg színét hogy a linear gradient hatás meg tudjon jelenni a szövegen*/
+    background-size: 200% 100%;
+    
+    transition: background-position 3s ease-in-out;
+}
+.nevTipus:hover{
+    background-position: -100% 0;
+}
+
+.section{
+    font-size: 36px;
+    color: #f5f5f5;
+    text-shadow:3px 3px 3px #cf3333;
+}
+.section:hover{
+    background-color: rgb(165, 45, 45, 0.7);
+}
+
+.rendszer{
+    display: grid;
+    grid-template-columns: auto;
+    width: fit-content;
+}
+
+#nevt.nevt{
+    background-image: linear-gradient(to right, rgba(11, 93, 36,0.5), rgba(238, 255, 0,0.5), rgba(235, 114, 21,0.5));
+    background-size: 200% 100%;
+    transition: background-position 3s ease-in-out;
+    width: fit-content;
+ 
+
+
+}
+#nevt.nevt:hover{
+    background-position: -100% 0;
+    font-size: 30px;
+    transition: font-size 3s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ #nevt{
+    background-image: linear-gradient(to right, rgba(11, 93, 36,0.5), rgba(238, 255, 0,0.5), rgba(235, 114, 21,0.5));
+    background-size: 200% 100%;
+    
+    width: fit-content;
+    transition: background-position 3s ease-in-out;
+    
+    
+}
+#nevt:hover{
+    background-position: -100% 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    transition: font-size 3s;
+} 
+
+.nevt h2{
+    all:initial;
+    width: fit-content;
+    display: flex;
+
+}
+.nevt h2:hover{
+    all:initial;
+ 
+}
+#nevt h2{
+    all:initial;
+    width: fit-content;
+    display: flex;
+
+}
+#nevt h2:hover{
+    all:initial;
+
+}
+
+.fizikaiJellemzok{
+    width: fit-content;
+}
+
+.memoria{
+    width: fit-content;
+}
+
+.kijelzo{
+width: fit-content;
+}
+
+.bubble {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(24, 142, 196,0.7);
+    border-radius: 50%;
+    position: absolute;
+    animation-name: moveBubble;
+    /*animation-duration: 60s;*/
+    animation-timing-function:ease-in-out;
+    top: 0;
+    right: 50%;
+ 
+}
+  @keyframes moveBubble{
+    0% {
+      transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(0, 100px);
+        background-color: rgba(77, 224, 241, 0.7);
+      }
+    20% {
+      transform: translate(-850px,100px);
+      background-color: rgba(20, 211, 71, 0.7);
+
+    }
+    30%{
+        transform: translate(-850px,750px);
+        background-color: rgba(109, 181, 21, 0.7);
+    }
+    40%{
+        transform: translate(700px,750px);
+        background-color: rgba(255, 232, 28, 0.7);
+    }
+    50%{
+        transform: translate(700px, -100px);
+        background-color: rgba(223, 96, 17, 0.7);
+    }
+    60%{
+        transform: translate(200px, 200px);
+    }
+    100%{
+        transform: translate(230px, 230px);
+    }
+  } 

@@ -41,7 +41,7 @@ for(i=0;i<13;i++){
     tables--;
 }}  */
 
-function szamlalo1(){  //onclick esemenyre rarakni a funkciot!
+/* function szamlalo1(){  //onclick esemenyre rarakni a funkciot!
     if(tables <=13){
         alert("ok");
     }else{
@@ -65,4 +65,4 @@ if(vendeg < 2 && tables < 2){
     nem foglalhat asztalt
 }else{
     foglalas megtörtént
-}
+}                 */

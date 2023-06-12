@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "HTML-Alapok",
+			"path": "../../CSS/Gyakorlat/HTML-Alapok"
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange"
+	}
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bérkalkulátor</title>
+    <link rel="stylesheet" href="berkalkulator.css">
+</head>
+<body>
+    <button id="namostmartenyleg" onclick="namostmarTenyleg()">Na mostmar tenyleg!</button>
+    <div id="body" class="body">
+    <button id="kezdhetjuk" onclick="kezdhetjuk()">Kezdhetjük</button>
+    <div class="cim">
+    <h2>2023 Évi Fizetés kalkulátor</h2>
+</div>
+<div class="form">
+<form action="">
+    <div class="jobb" id="bal"><label for="fizetesed">Fizetésed:</label>
+    <input type="text" id="fizetesed" onblur="onBlur1()"> 
+    <label for="egyebek">Egyéb fizetés:</label>
+    <input type="text" id="egyebek" onblur="onBlur2()">
+     <label for="brutto"><b>Bruttó:</b></label>
+    <input type="text" id="brutto" readonly><br><br><br>
+</div>
+<div class="jobb">
+    <label for="ado">Személyi Jövedelemadó:</label>
+    <input type="text" id="ado"> 
+    <label for="nyugdij">Nyugdíjjárulék:</label>
+    <input type="text" id="nyugdij"> 
+    <label for="egbizt">Eg. biztosítási járulék:</label>
+    <input type="text" id="egbizt"> 
+    <label for="munkaeropj">Munkaerő-piaci járulék:</label>
+    <input type="text" id="munkaeropj"> 
+    <label for="netto"><b>Nettó fizetés:</b></label>
+    <input type="text" id="netto"> 
+    <label for="szocho">SZOCHO:</label>
+    <input type="text" id="szocho"> 
+    <label for="munkaerpia">Munkaerő piaci hozzájárulás:</label>
+    <input type="text" id="munkaerpia"> 
+    <label for="munkraf"><b>Munkáltatói ráfordítás összesen:</b></label>
+    <input type="text" id="munkraf"> 
+    <input type="submit"></div>
+</form></div>
+<div id="jQuery" class="jQuery">
+    <p>Doboz</p>
+</div>
+
+    <div class="iframe">
+        <iframe src="https://konyvelescentrum.hu/adok-es-jarulekok-kozterhek/no-a-minimalber-2023-ban-mi-valtozik-vele-egyutt/" frameborder="20" width="100%" height="400px"></iframe>
+    </div>
+
+    <div>
+        <iframe src="" frameborder="0"></iframe>
+    </div>
+</div>
+
+<!-- 
+    <div>
+        <h2 id="elsoTomb">Első Tömb:</h2>
+        <h3 id="masodikTomb"></h3>
+        <h4 id="harmadikTomb"></h4>
+        <h3 id="elsoTomb1"></h3>
+        <h3 id="masodikTomb1"></h3>
+        <h4 id="harmadikTomb1"></h4>
+        <h3 id="elsoTomb2"></h3>
+        <h3 id="masodikTomb2"></h3>
+        <h4 id="harmadikTomb2"></h4>
+        <h3 id="elsoTomb3"></h3>
+        <h2 id="osszeAdottErtek"></h2>
+        <h3 id="elsoObjektum"></h3>
+        <h3 id="masodikObjektum"></h3>
+    </div>   -->
+    <script src="berkalkulator.js"></script>
+</body>
+</html>
