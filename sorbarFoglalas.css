@@ -1,0 +1,19 @@
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .dobo{
+
+    background-color: rgba(237, 230, 11, 0.6);
+  }
+
+  #glob{
+    margin-top: 20px;
+  }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sorbarfoglalas.css">
+</head>
+<body>
+
+<section>
+    <h1 id="asztalokszama">13</h1>
+    <h1 id="ferohelyekszama">65</h1>
+</section>
+
+<section>
+    <h2>Input mezők:</h2>
+    <div><h2>Ember: </h2><input type="text" id="ember"></div>
+    <div> <h2>Asztal: </h2> <input type="text" id="asztal"></div>
+</section>
+
+<section>
+    <h1 id="lefoglaltasztalokszama">Lefoglalt asztalok száma: </h1>
+    <h1 id="szoveg"></h1>
+    <h1 id="lefoglaltferohelyekszama">Lefoglalt férőhelyek száma: </h1>
+    <button onclick="megerosites()"><h1>Megerősítés</h1></button>
+</section>
+
+<div id="popupContainer" class="popup" style="display: none;">
+    <h2>Köszönjük a foglalását!</h2>
+    <p>Addigis ismerje meg sörválasztékaink részletes leírását!</p>
+    <button id="closePopup">Bezárás</button>
+  </div>
+
+<div class="doboz">
+    <h1 id="szabadasztalokszama"> Front-End fejlesztőképzés: </h1>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+</div>
+
+<div class="doboz2">
+
+</div>
+
+<div>
+    <p id="glob"></p>
+</div>
+
+
+    <script src="sorbarFoglalas.js"></script>
+</body>
+</html>
