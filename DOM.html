@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DOM.css">
+</head>
+<body>
+    <section>
+        <p>dfhdfhdfh</p>
+    </section>
+    <div id="container">
+        <h2 class="h2Tagek" id="h2Tag">Ez egy HTML-ben megirt H2 tag</h2>
+        <h2 class="h2Tagek">Barack</h2>
+        <h2 onclick="changeText(this)">Alma</h2>
+    </div>
+    <div class="dobozok">
+        Doboz1
+        <img id="kep" src="https://img.freepik.com/free-photo/silver-sedan-with-red-lights-parked-port_114579-4385.jpg?size=626&ext=jpg&ga=GA1.1.179447484.1685780989&semt=ais" alt="">
+        <button onclick="kepValto()">Masik autot szeretnek!</button>
+    </div>
+    <div class="dobozok">Doboz2
+        <form id="frm1">
+            First name: <input type="text" name="fname" value="Donald"><br>
+            Last name: <input type="text" name="lname" value="Duck"><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+    </div>
+    <div class="dobozok">Doboz3
+        <script>
+            document.write(Date());  // a document.write()-al lehet kozvetlen a html-be irni!
+            </script>
+    </div>
+    <div>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            Name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+            </form>
+    </div>
+
+    <div>
+        <h2>Kerem Irjon be egy szamot 1 es 10 kozott: 
+            <input type="number" name="szam" id="szam">
+            <button onclick="szamEllenorzo()">Kattintson</button>
+            <p id="szoveg"></p>
+        </h2>
+    </div>
+
+    <p onclick="this.innerHTML='Rakattintottal a szovegre! '" id="p1">
+        This is a text.
+        This is a text.
+        This is a text.
+        This is a text.
+    </p>
+        
+    <input type="button" value="Hide text" onclick="document.getElementById('p1').style.visibility='hidden'">
+    <input type="button" value="Show text" onclick="document.getElementById('p1').style.visibility='visible'">
+
+    <div id="container2">
+        <div id="animate">
+        </div>
+    </div>
+    <div><button onclick="animation()">Animacio
+    </button>
+    <button id="gomb1">Kattints</button>
+    <h2 id="h2Tag2">Itt lesz a szoveg</h2>
+    </div>
+
+    <div id="myDiv1">
+        <h2>Bubbling:</h2>
+        <p id="myP1">Click me!</p>
+      </div><br>
+      
+      <div id="myDiv2">
+        <h2 id="h2Tag3">Capturing:</h2>
+        <p id="myP2">Click me!</p>
+      </div>
+    <div id="kiiratoDiv">
+
+    </div>
+
+    <div id="div11">
+        <p id="p11">This is a paragraph.</p>
+        <p id="p22">This is a paragraph.</p>
+        <h3>Nem undefined!!!!</h3>
+        </div>
+    <div id="div2">
+        <h1 id="h1Tag5"></h1>
+    </div>
+    <script src="DOM.js"></script>
+</body>
+</html>

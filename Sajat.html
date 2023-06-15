@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script src="Sajat.js"></script>
+    </head>
+
+    <body>
+        <img id="kep1" src="https://picsum.photos/536/354">
+        <button onclick="document.getElementById('kep1').src='https://picsum.photos/seed/picsum/536/354'">Kepvaltas</button>'
+        <p id="vsz"> Valtozo szoveg</p>
+        <button type="button" onclick="document.getElementById('vsz').innerHTML='Tengeri Malac'">Megvaltoztatja a szoveget</button>
+        <h3 id="stilus">Kepes megvaltoztatni egy elem stilusat a Javascript</h3>
+        <button type="button" onclick="document.getElementById('stilus').style='font-size:30px;color:green;border:2px solid black'">Stilus valtoztatas</button>
+        <button type="button" title="(display:none tunteti el)" ondblclick="document.getElementById('rejtett').style.display='none'">Eltunik a kep</button>
+
+       
+        <img id="rejtett" style="display: none; width: 800px;height: 700px;" src="https://picsum.photos/seed/picsum/536/354" alt=""></div>
+        <button type="button" onclick="document.getElementById('rejtett').style.display='block'">Rejtett kep elohozasa</button>
+    
+
+    <p id="p"></p>
+    <script>document.getElementById('p').innerHTML='Paragrafus'</script>
+
+    <button type="button" onclick="egy()">Megvaltoztatja a szoveget 2</button>
+
+    <p id="szamolas"></p>
+
+    <p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+<script>document.write(7+6);</script>
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+<script>window.alert("alertbox vagyok!!!!(window.alert())");</script>
+
+<button onclick="window.print()">Oldal Nyomtatasa</button>
+<p>sajffasfjakfasjkhasjfhakhfaskfhsfakfh</p>
+<button onmouseover="ketto()" id="split">SPLIT</button>
+
+<p id="forCiklus"></p>
+<script>
+    var for1 = "";
+var i;
+for (i = 0; i<10 ; i++){
+  for1 += "A ciklusvaltozo erteke: " +i + "<br>";
+}
+document.getElementById("forCiklus").innerHTML = for1;
+</script>
+
+<p id="whileCiklus"></p>
+<script>
+    var while1 = "";
+    var i = 0;
+    while (i<10){
+        while1 += "A ciklusvaltozo erteke: " + i + "<br>";
+        i++;
+    }
+    document.getElementById("whileCiklus").innerHTML = while1;
+</script>
+  <!--
+<p id="forCiklus2"></p>
+<script>
+    const cars= ["Audi", "Volvo", "Fiat", "Opel Astra", "Volkswagen", "Toyota", "Mercedes"]
+    let text = ""
+    for (let i=0; cars.length; i++)
+    {text += cars[i] + "<br>"}
+    document.getElementById("forCiklus2").innerHTML = text;
+</script>
+  -->
+  <p id="def"></p>
+  <script>
+    function myf(a,b){
+        if (b === undefined){
+        b= 2;}
+        return a*b;
+    }
+    document.getElementById("def").innerHTML = "Az eredmeny: " + myf(8)
+  </script>
+
+  <p id="def1"></p>
+  <script>
+    function myf1(a,b = 10){
+        return a+b;
+    }
+    document.getElementById("def1").innerHTML = "Az eredmeny: " + myf1(25);
+  </script>
+
+<p id="def2"></p>
+    <script>
+    function findMax(){
+        let max = -Infinity;
+        for(let i=0; i<arguments.length; i++)
+        {if (arguments[i] > max)
+        {max = arguments[i];}}
+        return max;
+    }
+    document.getElementById("def2").innerHTML= findMax(3455,46346,34535,2344,7688);
+</script>
+
+<p id="def3"></p>
+<script>                             
+    function sumALL() {
+        let sum = 0;
+        for(let i=0; i<arguments.length; i++)
+        {sum+= arguments[i];}
+        return sum;
+    }
+    document.getElementById("def3").innerHTML= sumALL(6,2,7,9,45,7,8);
+</script>  <!--Osszeadja az argumentumokat -->
+
+<p id="demo"></p>
+
+<script>
+let x = myFunction();
+function myFunction() {
+  return this;
+}
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+<p id="call"></p>
+<script>
+    const person= {
+        fullName: function(){
+            return this.firstName + " " + this.lastName;
+        }
+    }
+    const person1 = {
+        firstName: "Edina",
+        lastName: "Dolmai"
+    }
+    const person2 = {
+        firstName: "Peter",
+        lastName: "Szabo"
+    }
+    document.getElementById("call").innerHTML = person.fullName.call(person2);
+</script>
+
+<p id="call1"></p> <!-- A call modszer kulon nezi az argumentumokat, mig az apply() modszer arraykent kezeli oket-->
+<script>
+    const person0 ={
+        fullName: function(city, country){
+            return this.firstName + " " + this.lastName + "," + city + "," + country;
+        }
+    }
+    const person11 = {
+        firstName: "Peter",
+        lastName: "Pan"
+    }
+    const person22 = {
+        firstName: "Julia",
+        lastName: "Kerekes"
+    }
+    document.getElementById("call1").innerHTML = person0.fullName.call(person22,"Birmingham", "England");
+</script>
+
+<p style="font-size: 20px;" id="math.max"></p>
+<script>
+    document.getElementById("math.max").innerHTML = "A legnagyobb szam: " + Math.max(2,43,23,11,55,242);
+</script>
+
+<p style="font-size: 20px;" id="math.max1"></p>
+<script>
+    document.getElementById("math.max1").innerHTML = "A legnagyobb szam: " + Math.max.apply(null,[75,3243,436346,43634634,346463634,346463346,346234]);
+</script>
+    </body>
+</html>
